@@ -4,7 +4,7 @@ require("./db.js");
 const app = express();
 const cors = require("cors");
 const PORT = 3001;
-app.use(cors({origin:"https://small-store-client.vercel.app/"}));
+app.use(cors({origin:"*"}));
 app.use(express.json());
 app.use("/product", productRouter);
 
